@@ -36,15 +36,28 @@ html {
   scroll-padding-top: 92px;
 }
 
-body {
+/* body {
   font-family: "Inter", sans-serif;
   background: #5060ac;
   color: var(--text);
   overflow-x: hidden;
   transition: color 0.35s ease;
+} */
+
+body {
+  font-family: "Inter", sans-serif;
+  background-image: linear-gradient(rgba(6, 10, 25, 0.65), rgba(6, 10, 25, 0.75)),
+    url("assets/background.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--text);
+  overflow-x: hidden;
+  transition: color 0.35s ease;
 }
 
-body::before {
+/* body::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -53,6 +66,26 @@ body::before {
   background-size: 48px 48px;
   pointer-events: none;
   z-index: -1;
+} */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 107, 53, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.site-header,
+.section,
+.stats-section,
+.cta-section,
+.footer {
+  position: relative;
+  z-index: 1;
 }
 
 a {
