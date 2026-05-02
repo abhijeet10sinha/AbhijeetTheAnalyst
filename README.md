@@ -1,4 +1,4 @@
-# Abhijeet Kumar Sinha — Top 1% Data Analyst Portfolio
+# Abhijeet Kumar Sinha — Data Analyst Portfolio
 
 This is a production-ready responsive portfolio website built with HTML, CSS and JavaScript.
 
