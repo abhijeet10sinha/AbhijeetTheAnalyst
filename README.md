@@ -1,4 +1,4 @@
-# Abhijeet Kumar Sinha — Data Analyst Portfolio
+# Abhijeet Kumar Sinha — Top 1% Data Analyst Portfolio
 
 This is a production-ready responsive portfolio website built with HTML, CSS and JavaScript.
 
@@ -34,4 +34,4 @@ portfolio/
 3. Go to Settings > Pages.
 4. Select branch `main` and folder `/root`.
 5. Your website will be live at:
-   https://yourusername.github.io/portfolio
+   https://abhijeet10sinha.github.io/AbhijeetTheAnalyst/
