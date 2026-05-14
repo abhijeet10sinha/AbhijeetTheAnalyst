@@ -316,7 +316,7 @@
     </section>
 
 
-    <!-- Project Section -->
+    <!-- Projects Section -->
 
     <section class="section" id="projects">
       <div class="section-heading reveal">
@@ -327,52 +327,44 @@
 
       <div class="case-study-stack reveal">
 
-        <!-- PROJECT 01: E-COMMERCE -->
+        <!-- PROJECT 01: CUSTOMER CHURN -->
         <article class="project-showcase">
           <div class="showcase-header">
             <div class="header-left">
               <span class="project-id">01</span>
-              <div class="card-tag">SQL & Business Analytics</div>
-              <h3>E-Commerce Analytics Database Project</h3>
+              <div class="card-tag">Python & Predictive Analytics</div>
+              <h3>Telecom Customer Churn Deep-Dive</h3>
             </div>
             <div class="header-right">
               <div class="card-tech">
-                <span>MySQL</span><span> Joins</span><span> Window Functions</span>
+                <span>Python</span><span> Pandas</span><span> Seaborn</span><span> Matplotlib</span>
               </div>
             </div>
           </div>
-
           <div class="showcase-body">
             <div class="info-group">
               <h4><i class="fas fa-exclamation-circle"></i> The Challenge</h4>
-              <p>
-                The business needed a structured way to analyze customer behavior, product performance,
-                revenue trends, payment patterns, and order cancellations from e-commerce transaction data.
-              </p>
+              <p>High attrition rates among fiber-optic customers were hurting the bottom line. The goal was to identify
+                the primary drivers of churn using statistical evidence and visualization.</p>
             </div>
-
             <div class="info-group">
               <h4><i class="fas fa-tools"></i> Technical Execution</h4>
               <ul class="detail-list">
-                <li>
-                  Designed a relational MySQL database with customers, products, orders, order_items,
-                  and payments tables using primary and foreign key relationships.
-                </li>
-                <li>
-                  Wrote business-focused SQL queries using joins, aggregations, filtering, subqueries,
-                  CASE WHEN logic, and window functions.
-                </li>
-                <li>
-                  Analyzed revenue by product and category, best-selling products, top customers,
-                  monthly revenue, payment modes, cancellation rate, and city-wise performance.
-                </li>
+                <li>Cleaned and pre-processed <strong>7,000+ records</strong> using Pandas, handling missing values and
+                  data type
+                  inconsistencies for a clean modeling dataset.</li>
+                <li>Conducted <strong>Exploratory Data Analysis (EDA)</strong> to uncover a 25% higher churn rate
+                  associated with
+                  month-to-month contracts.</li>
+                <li>Built <strong>correlation heatmaps</strong> and distribution plots in Seaborn to visualize the
+                  impact of monthly
+                  charges and technical support quality on retention.</li>
               </ul>
             </div>
           </div>
-
           <div class="showcase-footer">
-            <a href="https://github.com/abhijeet10sinha/ecommerce-mysql-project" target="_blank" class="primary-btn">
-              <span>View Analysis</span> <i class="fab fa-github"></i>
+            <a href="https://github.com/abhijeet10sinha/Customer-Churn-Analysis" target="_blank" class="primary-btn">
+              <span>View Analysis</span> <i class="fas fa-chart-line"></i>
             </a>
           </div>
         </article>
@@ -396,9 +388,10 @@
             <div class="info-group">
               <h4><i class="fas fa-exclamation-circle"></i> The Challenge</h4>
               <p>
-                Buyers, investors, and developers needed clear insights into Gurgaon’s residential real estate market,
-                including premium localities, pricing trends, builder influence, property type performance, and RERA
-                impact.
+                Buyers, investors, and developers needed clear, data-backed insights into Gurgaon’s residential real
+                estate market, including premium localities, pricing trends, builder influence, property type
+                performance,
+                and RERA impact.
               </p>
             </div>
 
@@ -406,15 +399,17 @@
               <h4><i class="fas fa-tools"></i> Technical Execution</h4>
               <ul class="detail-list">
                 <li>
-                  Cleaned and prepared real estate listing data using Python and Pandas by standardizing columns,
-                  converting numeric fields, removing duplicates, and fixing inconsistent categorical values.
+                  Cleaned and prepared real estate listing data using <strong>Python and Pandas</strong> by
+                  standardizing
+                  columns, converting numeric fields, removing duplicates, and fixing inconsistent categorical values.
                 </li>
                 <li>
-                  Performed Exploratory Data Analysis to compare locality-wise pricing, rate per sqft,
+                  Performed <strong>Exploratory Data Analysis</strong> to compare locality-wise pricing, rate per sqft,
                   BHK configuration, property type, builder pricing, and RERA approval impact.
                 </li>
                 <li>
-                  Built a professional Power BI dashboard with KPI cards, slicers, and interactive visuals
+                  Built a professional <strong>Power BI dashboard</strong> with KPI cards, slicers, and interactive
+                  visuals
                   to present market insights in a business-friendly format.
                 </li>
               </ul>
@@ -429,11 +424,61 @@
           </div>
         </article>
 
-        <!-- PROJECT 03: BANKING -->
-        <article class="project-showcase">
+        <!-- PROJECT 03: E-COMMERCE -->
+        <article class="project-showcase hidden-project">
           <div class="showcase-header">
             <div class="header-left">
               <span class="project-id">03</span>
+              <div class="card-tag">SQL & Business Analytics</div>
+              <h3>E-Commerce Analytics Database Project</h3>
+            </div>
+            <div class="header-right">
+              <div class="card-tech">
+                <span>MySQL</span><span> Joins</span><span> Window Functions</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase-body">
+            <div class="info-group">
+              <h4><i class="fas fa-exclamation-circle"></i> The Challenge</h4>
+              <p>
+                The business needed a structured analytics system to understand customer behavior, product performance,
+                revenue trends, payment patterns, and order cancellations from e-commerce transaction data.
+              </p>
+            </div>
+
+            <div class="info-group">
+              <h4><i class="fas fa-tools"></i> Technical Execution</h4>
+              <ul class="detail-list">
+                <li>
+                  Designed a relational <strong>MySQL database</strong> with customers, products, orders, order_items,
+                  and payments tables using primary and foreign key relationships for structured analysis.
+                </li>
+                <li>
+                  Wrote business-focused <strong>SQL queries</strong> using joins, aggregations, filtering, subqueries,
+                  CASE WHEN logic, and window functions to extract actionable insights.
+                </li>
+                <li>
+                  Analyzed <strong>revenue by product and category</strong>, best-selling products, top customers,
+                  monthly revenue, payment modes, cancellation rate, and city-wise performance.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="showcase-footer">
+            <a href="https://github.com/abhijeet10sinha/ecommerce-mysql-project" target="_blank" class="primary-btn">
+              <span>View Analysis</span> <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 04: BANKING -->
+        <article class="project-showcase hidden-project">
+          <div class="showcase-header">
+            <div class="header-left">
+              <span class="project-id">04</span>
               <div class="card-tag">MySQL & Risk Analysis</div>
               <h3>Banking Transaction & Fraud Detection</h3>
             </div>
@@ -446,67 +491,75 @@
           <div class="showcase-body">
             <div class="info-group">
               <h4><i class="fas fa-exclamation-circle"></i> The Challenge</h4>
-              <p>Analyzing 10,000+ synthetic banking records to identify irregular transaction patterns and assess loan
-                risks based on historical customer behavior.</p>
+              <p>Analyzed <strong>10,000+ synthetic banking records</strong> to identify irregular transaction patterns,
+                detect potential fraud signals, and assess loan risks based on historical customer behavior.</p>
             </div>
             <div class="info-group">
               <h4><i class="fas fa-tools"></i> Technical Execution</h4>
               <ul class="detail-list">
-                <li>Developed **Stored Procedures** to automate the detection of high-velocity transactions that flag
-                  potential fraud.</li>
-                <li>Implemented **Data Validation Constraints** to ensure 100% accuracy in financial reporting across
-                  different branch IDs.</li>
-                <li>Created **Aggregate Risk Reports** using nested queries to evaluate debt-to-income ratios for loan
-                  applicants.</li>
+                <li>Developed <strong>Stored Procedures</strong> to automate the detection of high-velocity transactions
+                  and flag potential fraud patterns for faster risk monitoring.</li>
+                <li>Implemented <strong>Data Validation Constraints</strong> to improve financial data accuracy and
+                  maintain consistency across different branch IDs.</li>
+                <li>Created <strong>aggregate risk reports</strong> using nested queries to evaluate debt-to-income
+                  ratios and support loan applicant risk assessment.</li>
               </ul>
             </div>
           </div>
           <div class="showcase-footer">
             <a href="https://github.com/abhijeet10sinha/abhijeet10sinha-banking-transaction-analytics-mysql"
-              target="_blank" target="_blank" class="primary-btn">
+              target="_blank" class="primary-btn">
               <span>View Analysis</span> <i class="fas fa-university"></i>
             </a>
           </div>
         </article>
 
-        <!-- PROJECT 04: CUSTOMER CHURN -->
-        <article class="project-showcase">
+        <!-- PROJECT 05: RETAIL SALES EXCEL DASHBOARD -->
+        <article class="project-showcase hidden-project">
           <div class="showcase-header">
             <div class="header-left">
-              <span class="project-id">04</span>
-              <div class="card-tag">Python & Predictive Analytics</div>
-              <h3>Telecom Customer Churn Deep-Dive</h3>
+              <span class="project-id">05</span>
+              <div class="card-tag">Excel & Business Analytics</div>
+              <h3>Retail Sales Performance Dashboard</h3>
             </div>
             <div class="header-right">
               <div class="card-tech">
-                <span>Python</span><span> Pandas</span><span> Seaborn</span><span> Matplotlib</span>
+                <span>Excel</span><span> Pivot Tables</span><span> Pivot Charts</span><span> Slicers</span>
               </div>
             </div>
           </div>
           <div class="showcase-body">
             <div class="info-group">
               <h4><i class="fas fa-exclamation-circle"></i> The Challenge</h4>
-              <p>High attrition rates among fiber-optic customers were hurting the bottom line. The goal was to identify
-                the primary drivers of churn using statistical evidence and visualization.</p>
+              <p>The business lacked a centralized reporting system to monitor sales performance, profit trends,
+                regional contribution, product performance, and customer segment behavior in one interactive view.</p>
             </div>
             <div class="info-group">
               <h4><i class="fas fa-tools"></i> Technical Execution</h4>
               <ul class="detail-list">
-                <li>Cleaned and pre-processed **7,000+ records** using Pandas, handling missing values and data type
-                  inconsistencies for a clean modeling dataset.</li>
-                <li>Conducted **Exploratory Data Analysis (EDA)** to uncover a 25% higher churn rate associated with
-                  month-to-month contracts.</li>
-                <li>Built **Correlation Heatmaps** and distribution plots in Seaborn to visualize the impact of monthly
-                  charges and technical support quality on retention.</li>
+                <li>Cleaned and prepared <strong>9,000+ retail sales records</strong> in Excel by formatting date,
+                  sales, profit, quantity, and discount fields for accurate analysis.</li>
+                <li>Created calculated columns for <strong>Order Year, Order Month, Month Number, Profit Margin,
+                    and Delivery Days</strong> to support time-based and profitability analysis.</li>
+                <li>Built an interactive dashboard using <strong>Pivot Tables, Pivot Charts, KPI cards, and
+                    slicers</strong>
+                  to analyze sales, profit, region, category, segment, and product-level performance.</li>
               </ul>
             </div>
           </div>
           <div class="showcase-footer">
-            <a href="https://github.com/abhijeet10sinha/Customer-Churn-Analysis" target="_blank" class="primary-btn">
-              <span>View Analysis</span> <i class="fas fa-chart-line"></i>
+            <a href="https://github.com/abhijeet10sinha/retail-sales-excel-dashboard" target="_blank"
+              class="primary-btn">
+              <span>View Dashboard</span> <i class="fas fa-chart-line"></i>
             </a>
           </div>
         </article>
+
+        <div class="load-more-container">
+          <button id="loadMoreProjects" class="primary-btn">
+            <span>Show More Projects</span> <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
 
       </div>
     </section>
@@ -525,7 +578,7 @@
           <div class="showcase-header">
             <div class="header-left">
               <span class="project-id">01</span>
-              <div class="card-tag">Data Science Bootcamp</div>
+              <div class="card-tag">Data Science Certification</div>
               <h3>Certified Data Science Professional</h3>
             </div>
             <div class="header-right">
@@ -541,21 +594,25 @@
             </div>
 
             <div class="info-group">
-              <h4><i class="fas fa-check-double"></i> Core Competencies</h4>
+              <h4><i class="fas fa-check-double"></i> Key Learning Areas</h4>
               <ul class="detail-list">
-                <li>Mastery in **Machine Learning pipelines** and predictive modeling.</li>
-                <li>Advanced **SQL for Data Science** and ETL processes.</li>
-                <li>Hands-on experience with **Statistics** and Exploratory Data Analysis.</li>
+                <li>Completed structured training in <strong>Python, SQL, statistics, and data analysis
+                    fundamentals</strong>.</li>
+                <li>Worked on <strong>data cleaning, exploratory data analysis, and visualization</strong> using
+                  real-world datasets.</li>
+                <li>Gained foundational exposure to <strong>machine learning concepts</strong> as part of the
+                  curriculum.</li>
               </ul>
             </div>
           </div>
 
-          <div class="showcase-footer" style="display: flex; gap: 15px;">
+          <div class="showcase-footer">  
+            <!-- style="display: flex; gap: 15px;" -->
             <a href="assets/Data_Science_Bootcamp__Certificate.pdf" target="_blank" class="primary-btn">
               <span>View Certificate</span> <i class="fas fa-file-pdf"></i>
             </a>
             <a href="https://go.odinschool.com/verify-certificate" target="_blank" class="secondary-outline-btn">
-              Verify Online
+              <span>Verify Online</span> <i class="fas fa-external-link-alt"></i>
             </a>
           </div>
         </article>

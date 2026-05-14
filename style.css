@@ -198,6 +198,33 @@ body::before {
   padding-bottom: 25px;
 }
 
+.showcase-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.secondary-outline-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: 2px solid var(--accent, #ff6b35);
+  border-radius: 12px;
+  color: var(--accent, #ff6b35);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.secondary-outline-btn:hover {
+  background: var(--accent, #ff6b35);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
 .project-id {
   font-size: 3.5rem;
   font-weight: 800;
@@ -689,6 +716,24 @@ a {
 .badge-right {
   right: 30px;
   bottom: 128px;
+}
+
+.hidden-project {
+  display: none;
+}
+
+.hidden-project.show {
+  display: block;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+#loadMoreProjects {
+  cursor: pointer;
 }
 
 @keyframes rotateRing {

@@ -65,3 +65,37 @@ function runCounters() {
     requestAnimationFrame(update);
   });
 }
+
+const loadMoreBtn = document.getElementById("loadMoreProjects");
+const hiddenProjects = document.querySelectorAll(".hidden-project");
+
+let visibleProjectCount = 0;
+
+if (loadMoreBtn) {
+  loadMoreBtn.addEventListener("click", () => {
+    const isFullyExpanded = visibleProjectCount >= hiddenProjects.length;
+
+    if (isFullyExpanded) {
+      hiddenProjects.forEach((project) => {
+        project.classList.remove("show");
+      });
+
+      visibleProjectCount = 0;
+      loadMoreBtn.innerHTML = '<span>Load More Projects</span> <i class="fas fa-chevron-down"></i>';
+
+      document.getElementById("projects").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+      return;
+    }
+
+    hiddenProjects[visibleProjectCount].classList.add("show");
+    visibleProjectCount++;
+
+    if (visibleProjectCount >= hiddenProjects.length) {
+      loadMoreBtn.innerHTML = '<span>Show Less</span> <i class="fas fa-chevron-up"></i>';
+    }
+  });
+}
