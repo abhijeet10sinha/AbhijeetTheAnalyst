@@ -33,5 +33,5 @@ portfolio/
 2. Upload all files.
 3. Go to Settings > Pages.
 4. Select branch `main` and folder `/root`.
-5. Your website will be live at:
+5. My website is live at:
    https://abhijeet10sinha.github.io/AbhijeetTheAnalyst/
