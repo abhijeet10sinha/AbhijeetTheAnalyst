@@ -99,3 +99,57 @@ if (loadMoreBtn) {
     }
   });
 }
+
+// CONTACT FORM SUBMISSION
+const contactForm = document.getElementById("contactForm");
+const contactSubmitBtn = document.getElementById("contactSubmitBtn");
+const contactFormStatus = document.getElementById("contactFormStatus");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    contactFormStatus.textContent = "";
+    contactFormStatus.className = "form-status";
+
+    contactSubmitBtn.disabled = true;
+    contactSubmitBtn.textContent = "Sending...";
+
+    const formData = new FormData(contactForm);
+
+    const contactData = {
+      name: formData.get("name").trim(),
+      email: formData.get("email").trim(),
+      phone: formData.get("phone").trim(),
+      reason: formData.get("reason"),
+      message: formData.get("message").trim()
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(contactData)
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || "Unable to send your message.");
+      }
+
+      contactFormStatus.textContent = result.message;
+      contactFormStatus.classList.add("success");
+      contactForm.reset();
+    } catch (error) {
+      contactFormStatus.textContent =
+        error.message || "Something went wrong. Please try again.";
+      contactFormStatus.classList.add("error");
+    } finally {
+      contactSubmitBtn.disabled = false;
+      contactSubmitBtn.textContent = "Send Message";
+    }
+  });
+}
