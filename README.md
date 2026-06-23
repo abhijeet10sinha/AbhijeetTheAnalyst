@@ -1,37 +1,19 @@
-# Abhijeet Kumar Sinha — Top 1% Data Analyst Portfolio
+# Abhijeet Kumar Sinha — Static Portfolio
 
-This is a production-ready responsive portfolio website built with HTML, CSS and JavaScript.
+A responsive portfolio website built only with HTML, CSS, and JavaScript.
 
-## Features
-- Premium hero section inspired by modern portfolio websites
-- Fully responsive design
-- Dark mode toggle
-- Smooth scroll and reveal animations
-- Animated stats counters
-- Project cards
-- Certification cards
-- Experience timeline
-- Contact CTA section
-- SEO meta tags
+## Run locally
 
-## Folder Structure
-portfolio/
-├── index.html
-├── style.css
-├── script.js
-└── assets/
-    └── resume.pdf
-
-## Important Setup
-1. Add your resume PDF inside the `assets` folder and rename it to `resume.pdf`.
-2. Replace the GitHub project links in `index.html` with your real repository links.
-3. Add your real LinkedIn/GitHub links in the contact/footer section if needed.
-4. Upload the project to GitHub Pages, Netlify, or Vercel.
+Open `index.html` directly in a browser, or use VS Code Live Server.
 
 ## Deploy on GitHub Pages
-1. Create a GitHub repository named `portfolio`.
-2. Upload all files.
-3. Go to Settings > Pages.
-4. Select branch `main` and folder `/root`.
-5. My website is live at:
-   https://abhijeet10sinha.github.io/AbhijeetTheAnalyst/
+
+1. Upload `index.html`, `style.css`, `script.js`, and the `assets` folder to the repository root.
+2. Open **Settings → Pages** in GitHub.
+3. Choose the `main` branch and `/root` folder.
+4. Save and wait for the site to publish.
+
+## Backend
+
+No backend, database, Node.js server, environment file, or `node_modules` folder is required.
+The contact section uses a normal email link.
