@@ -1556,3 +1556,46 @@ h6,
     width: 100%;
   }
 }
+
+
+.availability-badge {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 22px;
+  padding: 9px 14px;
+  border: 1px solid rgba(74, 222, 128, 0.25);
+  border-radius: 999px;
+  background: rgba(74, 222, 128, 0.08);
+  color: #86efac;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.availability-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 12px rgba(74, 222, 128, 0.8);
+}
+
+.simple-contact-card .contact-detail {
+  padding: 0 0 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.simple-contact-card .contact-detail:last-of-type {
+  margin-bottom: 26px;
+}
+
+.simple-contact-card .contact-actions {
+  display: block;
+}
+
+.simple-contact-card .contact-actions .btn {
+  width: 100%;
+  min-height: 52px;
+}
